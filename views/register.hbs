@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" >
+        <div class="form">
+            <div class="head-box">
+                <h1>Registration</h1>
+                {{#if msg}}
+                <p class="{{msg_type}}">{{msg}}</p>
+                {{/if}}
+            </div>
+            <form action="/auth/register" method="post">
+                  <div class="box">
+                      <label class="label" for="name">Full Name</label>
+                      <input type="text" class="name" id="name" name="name" />
+                  </div>
+                  <div class="box">
+                      <label class="label" for="email">Email</label>
+                      <input type="email" class="email" id="email" name="email" />
+                  </div>
+                  <div class="box">
+                      <label class="label" for="password">Password</label>
+                      <input type="password" class="password" id="password" name="password" />
+                  </div>
+                  <div class="box">
+                      <label class="label" for="confirm-password">Confirm Password</label>
+                      <input type="password" class="confirm_password" id="confirm_password" name="confirm_password" />
+                  </div>
+                  <div class="btn">
+                      <button type="submit">REGISTER</button>
+                  </div>
+                  <div class="signup-now">
+                      Already a member?<a href="/">Login now</a>
+                  </div>
+           </form>
+
+        </div>
+    </div>
+</body>
+</html>

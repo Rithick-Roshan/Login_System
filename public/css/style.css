@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(10, 0, 14, 0.3);
+}
+
+.head-box h1 {
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid rgba(95, 5, 125, 0.8); /* Only bottom border */
+    background: transparent;
+    outline: none;
+}
+
+input:focus {
+    border-bottom-color: blueviolet; /* Change bottom border color on focus */
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(19, 1, 38, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(36, 1, 68);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.signup-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.error{
+    color: red;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+}
+.good{
+    color: green;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+}
